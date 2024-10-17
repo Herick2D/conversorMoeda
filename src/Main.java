@@ -20,6 +20,7 @@ public class Main {
             System.out.println("4: Dólar americano =>> Real brasileiro");
             System.out.println("5: Peso argentino =>> Dólar americano");
             System.out.println("6: Dólar americano =>> Peso argentino");
+            System.out.println("7: Sair da aplicação");
             System.out.println("*********************************************");
 
             switch(sc.nextInt()) {
