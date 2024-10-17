@@ -10,6 +10,8 @@ import java.net.URL;
 
 public class Conversor {
 
+    Historico historico = new Historico();
+
     public void converter(String moedaBase, String moedaAlvo, double value) throws IOException {
         String myApiKey = "19c244aefead1ecb028a8af9";
         String link = "https://v6.exchangerate-api.com/v6/" + myApiKey + "/pair/" + moedaBase + "/" + moedaAlvo + "/" + value;
@@ -24,6 +26,11 @@ public class Conversor {
 
         String req_result = jsonobj.get("conversion_result").getAsString();
         String result = "O resultado é de " + value + " " + moedaBase + " para " + moedaAlvo + " tem o valor final de " + req_result;
+        historico.logHistorico(result);
         System.out.println(result);
+    }
+
+    public void listar() {
+        historico.exibirHistorico();
     }
 }

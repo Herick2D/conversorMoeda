@@ -20,7 +20,8 @@ public class Main {
             System.out.println("4: Dólar americano =>> Real brasileiro");
             System.out.println("5: Peso argentino =>> Dólar americano");
             System.out.println("6: Dólar americano =>> Peso argentino");
-            System.out.println("7: Sair da aplicação");
+            System.out.println("7: Exibir histórico de pesquisa");
+            System.out.println("8: Sair da aplicação");
             System.out.println("*********************************************");
 
             switch(sc.nextInt()) {
@@ -55,6 +56,10 @@ public class Main {
                     conversor.converter("USD", "ARS", valor);
                     break;
                 case 7:
+                    System.out.println("Seu histórico de pesquisas: ");
+                    conversor.listar();
+                    break;
+                case 8:
                     System.out.println("Saindo... ");
                     exit = false;
                     break;
