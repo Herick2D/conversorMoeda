@@ -26,32 +26,32 @@ public class Main {
                 case 1:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("BRL", "ARS", valor);
+                    conversor.converter("BRL", "ARS", valor);
                     break;
                 case 2:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("ARS", "BRL", valor);
+                    conversor.converter("ARS", "BRL", valor);
                     break;
                 case 3:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("BRL", "USD", valor);
+                    conversor.converter("BRL", "USD", valor);
                     break;
                 case 4:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("USD", "BRL", valor);
+                    conversor.converter("USD", "BRL", valor);
                     break;
                 case 5:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("ARS", "USD", valor);
+                    conversor.converter("ARS", "USD", valor);
                     break;
                 case 6:
                     System.out.println("Insira o valor que deseja converter: ");
                     valor = value.nextInt();
-                    conversor.converte("USD", "ARS", valor);
+                    conversor.converter("USD", "ARS", valor);
                     break;
                 case 7:
                     System.out.println("Saindo... ");

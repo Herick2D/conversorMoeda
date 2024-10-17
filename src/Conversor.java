@@ -10,7 +10,7 @@ import java.net.URL;
 
 public class Conversor {
 
-    public void converte(String moedaBase, String moedaAlvo, double value) throws IOException {
+    public void converter(String moedaBase, String moedaAlvo, double value) throws IOException {
         String link = "https://v6.exchangerate-api.com/v6/19c244aefead1ecb028a8af9/pair/" + moedaBase + "/" + moedaAlvo + "/" + value;
 
         URL url = new URL(link);
